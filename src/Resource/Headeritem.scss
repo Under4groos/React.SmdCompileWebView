@@ -1,6 +1,11 @@
+
 @import "../Resource/colors.scss";
 
-.navbar-back{
+
+ 
+.w-100vh{
+    height: 100vh;
+}
+.selection-light{
     background: $color-navbar-back-l;
-    
 }
