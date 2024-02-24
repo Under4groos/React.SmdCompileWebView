@@ -11,17 +11,17 @@ const Footer = () => {
                 Copyright © UnderKo 2024
               </div>
             </div>
-            <div className="col-auto">
+            <div className="col-auto" >
               <div className="small m-0 text-white">
                 SPYRAL - ALONE (slowed + reverb)
               </div>
             </div>
-            <div className="col-auto">
-              <a className="link-light small" href="#!">
+            <div className="col-auto" >
+              <a className="link-light small" href="#">
                 Privacy
               </a>
               <span className="text-white mx-1">·</span>
-              <a className="link-light smal " href="#faq">
+              <a className="link-light smal " href="#">
                 Contact
               </a>
             </div>

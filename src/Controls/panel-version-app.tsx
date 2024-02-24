@@ -9,6 +9,7 @@ interface PanelVersionAppProp {
   Url: string;
   CountDownloads: string;
   EvMouseDown: any;
+  Vers: any;
 }
 
 const PanelVersionApp = ({
@@ -17,6 +18,7 @@ const PanelVersionApp = ({
   Url,
   CountDownloads,
   EvMouseDown,
+  Vers
 }: PanelVersionAppProp) => {
   return (
     <>
@@ -29,6 +31,7 @@ const PanelVersionApp = ({
             <div className="col-lg-6">
               <div className="badge bg-primary me-sm-1 mb-2">Обновление</div>
               <div className="badge bg-primary me-sm-1 mb-2 ">Программа</div>
+              <div className="badge bg-primary me-sm-1 mb-2 ">{Vers}</div>
               <h2 className="fw-bolder text-white-50">{Title}</h2>
               <p className="lead fw-normal text-white-50 mb-0">{Text}</p>
               <p className="lead fw-normal text-white-50 mb-0">

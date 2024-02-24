@@ -1,7 +1,7 @@
 import React from "react";
 import PanelVersionApp from "./panel-version-app";
 import Git from "../Modules/GitHub";
-import ReactDOM from "react-dom";
+import { render } from "react-dom";
 
 interface SelectionListVerisonsProp {
   Data: String;
@@ -25,6 +25,7 @@ const SelectionListVerisons = ({
             
           let asset = o["assets"][0];
           let name = asset["name"];
+          let tag_name = o["tag_name"];
           let body = o["body"];
           let download_count = asset["download_count"];
           count_ += download_count
@@ -35,15 +36,15 @@ const SelectionListVerisons = ({
               EvMouseDown={EvMouseDown}
               Url={"https://i.imgur.com/7xeBcoE.png"}
               CountDownloads={download_count}
+              Vers={tag_name}
             ></PanelVersionApp>
           );
         })}
       </>
     );
-    
-    ReactDOM.render(component, document.getElementById("listversions"));
-
-    ReactDOM.render(  <h2 className="fw-bolder text-white-50 py-5">Cкачиваний: {count_}</h2> , document.getElementById("count_download"));
+    render(component, document.getElementById("listversions"));
+    render(<h2 className="fw-bolder text-white-50 py-5">Cкачиваний: {count_}</h2> , document.getElementById("count_download"));
+     
   });
 
   return (

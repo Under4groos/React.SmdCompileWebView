@@ -15,20 +15,26 @@ import Footer from "./Controls/footer";
 import SelectionAdvantagesofTheProgram from "./Controls/selection-AdvantagesofTheProgram";
 import PanelVersionApp from "./Controls/panel-version-app";
 import SelectionListVerisons from "./Controls/selection-lastversion";
-import ReactDOM from "react-dom";
+import { render } from 'react-dom';
 import SelectorDevelopers from "./Controls/selector-developer";
-
+let url_download = "";
 let GitHub_Res = new Git(
   "https://api.github.com/repos/Under4groos/SmdCompile.View/releases"
 );
 GitHub_Res.Get((Data: any) => {
   let list_ = Data.Commits;
   let o = list_[0];
-
+  console.log(o)
   let asset = o["assets"][0];
+
+  url_download = asset["browser_download_url"]
+
   let name = asset["name"];
   let body = o["body"];
+  let tag_name = o["tag_name"];
   let download_count = asset["download_count"];
+
+
   let component = (
     <PanelVersionApp
       Text={body}
@@ -36,14 +42,18 @@ GitHub_Res.Get((Data: any) => {
       EvMouseDown={null}
       Url={"https://i.imgur.com/7xeBcoE.png"}
       CountDownloads={download_count}
+      Vers={tag_name}
     ></PanelVersionApp>
   );
-  ReactDOM.render(component, document.getElementById("selectionlastver"));
+ 
+  render(component, document.getElementById("selectionlastver"));
 });
 
 let Text: string =
   " SmdCompile - автоматизация некоторых действий связанных с созданием QC, VTF, VMT файлов, с простой системой конвертации изображений, моделей и прочего.  ";
-
+var download_last = () => {
+  window.open(url_download, '_blank') 
+}
 var show_list_v = () => {
   let saotp = document.getElementById("mainmenu");
   let lv = document.getElementById("ListVerisons");
@@ -91,7 +101,7 @@ function App() {
       </nav>
 
       <div id="mainmenu">
-        <Headeritem Title={"SmdCompile"} DateText={Text}></Headeritem>
+        <Headeritem Title={"SmdCompile"} EvDownload={download_last} DateText={Text}></Headeritem>
 
         <section className="py-5" id="selectionlastver"></section>
 

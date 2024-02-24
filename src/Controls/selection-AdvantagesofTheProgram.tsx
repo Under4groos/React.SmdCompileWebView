@@ -20,33 +20,30 @@ const SelectionAdvantagesofTheProgram = () => {
                 <ButtonItemDignity
                   Title={"Удобный UI"}
                   Text={
-                    "Все кнопки, фреймы, лейбы расположены так чтобы вам было удобно"
+                    "Красивый и удобный дизайн. Все кнопки, фреймы, лейбы расположены так чтобы вам было удобно"
                   }
                 ></ButtonItemDignity>
                 <ButtonItemDignity
                   Title={"Множество настроек"}
-                  Text={"Доступная настройка каждого угла программы"}
+                  Text={"Доступная настройка каждого угла программы. "}
                 ></ButtonItemDignity>
                 <ButtonItemDignity
-                  Title={"Тут текст"}
-                  Text={"Я забыл что хотел написать..."}
+                  Title={"Конвертация на лету"}
+                  Text={"Создание, удаление файлов, компиляция и конвертация материалов \"на лету\" и многое другое..."}
                 ></ButtonItemDignity>
                 <ButtonItemDignity
-                  Title={"Help me pls!"}
-                  Text={"UnderKo .... Kill me"}
+                  Title={"Первая настройка"}
+                  Text={"Простая настройка в пару кликов. Не нужно бегать по папкам и искать .exe шники, она сделает это за вас."}
                 ></ButtonItemDignity>
                 <ButtonItemDignity
-                  Title={"Множество настроек"}
-                  Text={"Доступная настройка каждого угла программы"}
+                  Title={"Редактор кода"}
+                  Text={"Полная настройка Текстового редактора. В папке \"Data\\SyntaxBox\" вы можете менять конфигурации форматов."}
                 ></ButtonItemDignity>
-                <ButtonItemDignity
-                  Title={"Тут текст"}
-                  Text={"Я забыл что хотел написать..."}
+                  <ButtonItemDignity
+                  Title={"Консоль"}
+                  Text={"Удобный вывод логов в консоль. Возможно вынести в отдельное окно."}
                 ></ButtonItemDignity>
-                <ButtonItemDignity
-                  Title={"Help me pls!"}
-                  Text={"UnderKo .... Kill me"}
-                ></ButtonItemDignity>
+                 
               </div>
             </div>
           </div>
