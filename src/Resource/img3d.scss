@@ -1,6 +1,6 @@
 .img3d_div {
 	transform:
-	  scale(0.8)
+	  scale(0.95)
 	  rotateY(0)
 	  rotateX(15deg)
 	  translateZ(1.5rem);
@@ -10,7 +10,7 @@
 	transition: 0.6s ease transform;
 	
 	&:hover {
-	  transform: scale(1);
+	  transform: scale(1.2);
 	   
 	}
   

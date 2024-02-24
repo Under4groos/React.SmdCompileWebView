@@ -3,31 +3,21 @@ import React from "react";
 import ButtonItem from "./Buttons/buttons-item";
 import Img3d from "./img-3d";
  
-interface SectionLastUpdateProp {
+interface PanelVersionAppProp {
   Text: string;
   Title: string;
   Url:string ;
   CountDownloads:string ;
 }
 
-const SectionLastUpdate = ({ Text, Title , Url , CountDownloads}: SectionLastUpdateProp) => {
+const PanelVersionApp = ({ Text, Title , Url , CountDownloads}: PanelVersionAppProp) => {
   return (
     <>
-    <div className="container px-5 my-5">
-          <div className="row gx-5 justify-content-center">
-            <div className="col-lg-8 col-xl-6">
-              <div className="text-center">
-                <h2 className="fw-bolder text-white-50">Последнее обновление</h2>
-                 
-                <p className="lead fw-normal text-muted mb-5 text-white-50"></p>
-              </div>
-            </div>
-          </div>
+    <div className="container px-5 my-5">   
           <div className="container px-5 my-5">
             <div className="row gx-5 align-items-center">
               <div className="col-lg-6">
               <Img3d Url={Url}></Img3d>
-              
               </div>
               <div className="col-lg-6">
                  
@@ -55,4 +45,4 @@ const SectionLastUpdate = ({ Text, Title , Url , CountDownloads}: SectionLastUpd
     </>
   );
 };
-export default SectionLastUpdate;
+export default PanelVersionApp;

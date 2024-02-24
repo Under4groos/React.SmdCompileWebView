@@ -4,6 +4,7 @@ import "../Resource/Headeritem.scss"
 
 
 import Img3d from "../Controls/img-3d";
+import Video3d from "../Controls/video-3d";
 import ButtonItem from "./Buttons/buttons-item";
 
 
@@ -24,13 +25,13 @@ const Headeritem = ({ Title, DateText }: HeaderitemProp) => {
               <div className="my-5 text-center text-xl-start">
                 <h1 className="display-5 fw-bolder text-white mb-2">{Title}</h1>
                 <p className="lead fw-normal text-white-50 mb-4">{DateText}</p>
-                <div className="d-grid gap-1 d-sm-flex justify-content-sm-center justify-content-xl-start mb-2">
+                <div className="d-grid gap-2 d-sm-flex justify-content-sm-center justify-content-xl-start mb-2">
                   <ButtonItem Title="Download Demo" Url="asdasd"></ButtonItem>
                   <ButtonItem Title="Buy  500₽" Url="https://vk.com/underko"></ButtonItem>
                   <ButtonItem Title="Telegram" Url="https://t.me/SmdCompile"></ButtonItem>
                    
                 </div>
-                <div className="d-grid gap-1 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                <div className="d-grid gap-2 d-sm-flex justify-content-sm-center justify-content-xl-start">
                   <ButtonItem Title="YouTube" Url="https://www.youtube.com/channel/UCgkPCLfQU1wxlFo8E8EhjxQ"></ButtonItem>
                  
                   <ButtonItem Title="GitHub" Url="https://github.com/Under4groos"></ButtonItem>
@@ -39,7 +40,9 @@ const Headeritem = ({ Title, DateText }: HeaderitemProp) => {
             </div>
             {/* d-none  */}
             <div className="col-xl-5 col-xxl-6  d-xl-block text-center div-3d">
-              <Img3d Url="https://i.imgur.com/OaXhpak.png"></Img3d>
+              <Img3d Url="https://i.imgur.com/7xeBcoE.png"></Img3d>
+
+              {/* <Video3d Url={""}></Video3d> */}
             </div>
           </div>
         </div>
