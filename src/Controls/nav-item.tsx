@@ -10,7 +10,7 @@ const Navitem = ({Data , EvMouseDown}:NavitemProp) => {
     <>
       <li className="nav-item">
        
-        <button onClick={EvMouseDown} className="nav-link text-select-forg">{Data}</button>
+        <button  onClick={EvMouseDown} className="btn btn-hover me-sm-1 text-select-forg">{Data}</button>
       </li>
     </>
   );

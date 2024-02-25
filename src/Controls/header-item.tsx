@@ -30,13 +30,13 @@ const Headeritem = ({ Title, DateText, EvDownload }: HeaderitemProp) => {
                       
                       className="btn btn-hover btn-lg px-24 me-sm-1"
                     >
-                      Download Demo
+                      Скачать Demo
                     </button>
                   </> : <></>}
 
                   
                   <ButtonItem
-                    Title="Buy  500₽"
+                    Title="Купить  500₽"
                     Url="https://vk.com/underko"
                   ></ButtonItem>
                   <ButtonItem

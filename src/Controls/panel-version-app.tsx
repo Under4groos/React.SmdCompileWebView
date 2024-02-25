@@ -37,8 +37,8 @@ const PanelVersionApp = ({
               <p className="lead fw-normal text-white-50 mb-0">
                 Downloads: {CountDownloads}
               </p>
-              <p className="lead fw-normal text-white-50 mb-0 ">
-                -----------------------------------------
+              <p className="lead fw-normal text-white-50 mb-3 ">
+                 
               </p>
 
               <ButtonItem

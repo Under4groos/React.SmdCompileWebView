@@ -39,7 +39,7 @@ GitHub_Res.Get((Data: any) => {
     <PanelVersionApp
       Text={body}
       Title={name}
-      EvMouseDown={null}
+      EvMouseDown={()=>{window.scrollBy(0, -1000);}}
       Url={"https://i.imgur.com/7xeBcoE.png"}
       CountDownloads={download_count}
       Vers={tag_name}
@@ -91,10 +91,10 @@ function App() {
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <Navitem
                 EvMouseDown={show_list_v}
-                Data={"Updates"}
+                Data={"Версии"}
               ></Navitem>
               <Navitem EvMouseDown={null} Data={"Низяя!!"}></Navitem>
-              <Navitem EvMouseDown={null} Data={"Тут Котики"}></Navitem>
+              <Navitem EvMouseDown={null} Data={"Котики"}></Navitem>
             </ul>
           </div>
         </div>
