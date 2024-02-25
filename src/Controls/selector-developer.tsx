@@ -14,9 +14,9 @@ const SelectorDevelopers = () => {
                   src="https://avatars.githubusercontent.com/u/54286928?v=4"
                   alt="..."
                 />
-                <h5 className="fw-bold text-white-50">UnderKo</h5>
+                <h5 className="fw-bold text-white">UnderKo</h5>
                 <div className="  text-white-50 fw-medium">
-                  Основной разработчик
+                  Уличный Дворник ( Разраб ) 
                 </div>
               </div>
             </div>

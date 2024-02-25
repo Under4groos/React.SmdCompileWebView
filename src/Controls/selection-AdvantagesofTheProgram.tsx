@@ -11,7 +11,7 @@ const SelectionAdvantagesofTheProgram = () => {
         <div className="container px-5 my-5">
           <div className="row gx-5 ">
             <div className="col-lg-4 mb-5 mb-lg-0 my-5">
-              <h2 className="fw-bolder text-white-50 mb-0">
+              <h2 className="fw-bolder text-white mb-0">
                 Достоинства программы{" "}
               </h2>
             </div>

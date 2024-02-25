@@ -8,7 +8,7 @@ interface ButtonItemProp {
 const ButtonItem = ({ Url , Title }: ButtonItemProp) => {
   return (
     <>
-      <a className="btn btn-hover btn-lg px-24 me-sm-1"  href={Url} target="_blank">
+      <a className="btn btn-hover btn-lg px-24 me-sm-1 text-select-forg"  href={Url} target="_blank">
         {Title}
       </a>
     </>

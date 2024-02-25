@@ -37,7 +37,7 @@ const SectionLastUpdate = ({ Text, Title , Url , CountDownloads}: SectionLastUpd
                 <div className="badge bg-primary me-sm-1 mb-2 ">
                   Программа
                 </div>
-                <h2 className="fw-bolder text-white-50">{Title}</h2>
+                {/* <h2 className="fw-bolder text-white">{Title}</h2> */}
                 <p className="lead fw-normal text-white-50 mb-0">{Text}</p>
                 <p className="lead fw-normal text-white-50 mb-0">Downloads: {CountDownloads}</p>
                 <p className="lead fw-normal text-white-50 mb-0 ">

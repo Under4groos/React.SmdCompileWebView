@@ -1,3 +1,4 @@
+@import "./colors.scss";
 .back-body {
   background-attachment: scroll;
   content: "";
@@ -31,4 +32,7 @@
 
 ::-webkit-scrollbar-thumb {
   background: transparent;
+}
+.text-select-forg{
+  color: $select;
 }

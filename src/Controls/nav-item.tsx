@@ -9,10 +9,8 @@ const Navitem = ({Data , EvMouseDown}:NavitemProp) => {
   return (
     <>
       <li className="nav-item">
-        {/* <a className="nav-link" href="/">
-        {Data}
-        </a> */}
-        <button onClick={EvMouseDown} className="nav-link">{Data}</button>
+       
+        <button onClick={EvMouseDown} className="nav-link text-select-forg">{Data}</button>
       </li>
     </>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Resource/App.css";
+import "./Resource/App.scss";
 import "./Resource/colors.scss";
 import "./Resource/navbar.scss";
 
@@ -91,10 +91,10 @@ function App() {
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <Navitem
                 EvMouseDown={show_list_v}
-                Data={"List updates"}
+                Data={"Updates"}
               ></Navitem>
-              <Navitem EvMouseDown={null} Data={"Contacts"}></Navitem>
-              <Navitem EvMouseDown={null} Data={"Oro!"}></Navitem>
+              <Navitem EvMouseDown={null} Data={"Низяя!!"}></Navitem>
+              <Navitem EvMouseDown={null} Data={"Тут Котики"}></Navitem>
             </ul>
           </div>
         </div>

@@ -4,27 +4,27 @@ import "../Resource/selector-pricing.scss";
 const SelectorPricing = () => {
   return (
     <>
-      <section className="pt-10 pt-md-12  py-5">
+      <section className="pt-10 pt-md-12  py-5 ">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-md-8 text-center">
-              <h3 className="mb-3 text-white-50">
+              <h3 className="mb-3 text-white">
                 Цены, которые сделают вашу работу более эффективной
               </h3>
             </div>
           </div>
 
           <div className="row py-5 ">
-            <div className="col-md-6 ">
+            <div className="col-md-6  ">
               <div className="  card-shadow border-0 mb-4">
-                <div className="card-body  p-4 card-back">
+                <div className="card-body  p-4 card-back card-border">
                   <div className="d-flex align-items-center">
-                    <h5 className="font-medium m-b-0 fs-3 text-white-50 text-uppercase">Free</h5>
+                    <h5 className="font-medium m-b-0 fs-3 text-white  text-uppercase">Free</h5>
                   </div>
                   <div className="row">
                     <div className="col-lg-5 text-center">
                       <div className="price-box my-3">
-                        <h1 className="card-title pricing-card-title text-white-50">
+                        <h1 className="card-title pricing-card-title text-white">
                           0₽
                         </h1>
                       </div>
@@ -66,15 +66,15 @@ const SelectorPricing = () => {
               </div>
             </div>
             <div className="col-md-6  ">
-              <div className="  card-shadow border-0 mb-4">
-                <div className="card-body p-4 card-back">
+              <div className="  card-shadow border-0 mb-4 ">
+                <div className="card-body p-4 card-back card-border">
                   <div className="d-flex align-items-center">
-                    <h5 className="font-medium m-b-0 fs-3 text-white-50 text-uppercase">Pro</h5>
+                    <h5 className="font-medium m-b-0 fs-3 text-white  text-uppercase">Pro</h5>
                   </div>
                   <div className="row">
                     <div className="col-lg-5 text-center">
                       <div className="price-box my-3">
-                        <h1 className="card-title pricing-card-title text-white-50">
+                        <h1 className="card-title pricing-card-title  text-white">
                           500₽
                         </h1>
                       </div>
