@@ -42,10 +42,10 @@ const SelectionListVerisons = ({
       </>
     );
     render(component, document.getElementById("listversions"));
-    // render(
-    //   <h2 className="fw-bolder text-white-50 py-5">Cкачиваний: {count_}</h2>,
-    //   document.getElementById("count_download")
-    // );
+    render(
+      <h2 className="fw-bolder text-white-50 py-5">Cкачиваний: {count_}</h2>,
+      document.getElementById("count_download")
+    );
   });
   let TEXT_HIDE: string = "На главную";
 
@@ -62,6 +62,9 @@ const SelectionListVerisons = ({
                 >
                   {TEXT_HIDE}
                 </button>
+                <div id="count_download">
+                 
+                </div>
               </div>
             </div>
           </div>
