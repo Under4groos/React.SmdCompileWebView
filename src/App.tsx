@@ -20,6 +20,7 @@ import SelectorDevelopers from "./Controls/Selectors/selector-developer";
 import SelectorPricing from "./Controls/Selectors/selector-pricing";
 import SelectorApplications from "./Controls/Selectors/selector-applications";
 import SelectionYoutubeFull from "./Controls/Selectors/selection-youtube-full";
+import Snow from "./Controls/snow";
 let url_download = "";
 let GitHub_Res = new Git(
   "https://api.github.com/repos/Under4groos/SmdCompile.View/releases"
@@ -118,7 +119,7 @@ function App() {
           </div>
         </div>
       </nav>
-
+      <Snow Count={100}></Snow>
       <div id="mainmenu">
         <Headeritem
           Title={"SmdCompile"}
