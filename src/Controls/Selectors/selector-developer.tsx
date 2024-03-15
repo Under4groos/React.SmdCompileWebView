@@ -1,6 +1,5 @@
 import React from "react";
 
- 
 const SelectorDevelopers = () => {
   return (
     <>
@@ -16,7 +15,7 @@ const SelectorDevelopers = () => {
                 />
                 <h5 className="fw-bold text-white">UnderKo</h5>
                 <div className="  text-white-50 fw-medium">
-                  Уличный Дворник ( Разраб ) 
+                  Уличный Дворник ( Разраб )
                 </div>
               </div>
             </div>

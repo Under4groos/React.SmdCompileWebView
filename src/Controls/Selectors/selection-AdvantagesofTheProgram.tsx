@@ -1,8 +1,8 @@
 import React from "react";
-import "../Resource/img3d.scss";
-import "../Resource/Headeritem.scss";
+import "../img-3d";
+import "../../Resource/Headeritem.scss";
 
-import ButtonItemDignity from "./Buttons/button-item-dignity";
+import ButtonItemDignity from "../Buttons/button-item-dignity";
 
 const SelectionAdvantagesofTheProgram = () => {
   return (
@@ -29,21 +29,28 @@ const SelectionAdvantagesofTheProgram = () => {
                 ></ButtonItemDignity>
                 <ButtonItemDignity
                   Title={"Конвертация на лету"}
-                  Text={"Создание, удаление файлов, компиляция и конвертация материалов \"на лету\" и многое другое..."}
+                  Text={
+                    'Создание, удаление файлов, компиляция и конвертация материалов "на лету" и многое другое...'
+                  }
                 ></ButtonItemDignity>
                 <ButtonItemDignity
                   Title={"Первая настройка"}
-                  Text={"Простая настройка в пару кликов. Не нужно бегать по папкам и искать .exe шники, она сделает это за вас."}
+                  Text={
+                    "Простая настройка в пару кликов. Не нужно бегать по папкам и искать .exe шники, она сделает это за вас."
+                  }
                 ></ButtonItemDignity>
                 <ButtonItemDignity
                   Title={"Редактор кода"}
-                  Text={"Полная настройка Текстового редактора. В папке \"Data\\SyntaxBox\" вы можете менять конфигурации форматов."}
+                  Text={
+                    'Полная настройка Текстового редактора. В папке "Data\\SyntaxBox" вы можете менять конфигурации форматов.'
+                  }
                 ></ButtonItemDignity>
-                  <ButtonItemDignity
+                <ButtonItemDignity
                   Title={"Консоль"}
-                  Text={"Удобный вывод логов в консоль. Возможно вынести в отдельное окно."}
+                  Text={
+                    "Удобный вывод логов в консоль. Возможно вынести в отдельное окно."
+                  }
                 ></ButtonItemDignity>
-                 
               </div>
             </div>
           </div>

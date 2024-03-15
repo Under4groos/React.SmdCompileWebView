@@ -9,8 +9,6 @@ const video3d = ({ Url }: video3dProp) => {
   return (
     <>
       <div className="img3d_div img-fluid rounded-3 my-5">
-        {/* <img style={{ width:"100%" }} src={Url} alt=""/> */}
-
         <iframe
           style={{ width: "100%", height: "315px" }}
           src="https://www.youtube.com/embed/tnfaZXuzXls?si=mHhcsIFlp9_sacGF"

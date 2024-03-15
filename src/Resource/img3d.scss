@@ -1,30 +1,18 @@
 .img3d_div {
-	transform:
-	  scale(0.95)
-	  rotateY(0)
-	  rotateX(15deg)
-	  translateZ(1.5rem);
-	//  transform-origin: 0% 50%;
-	transform-style: preserve-3d;
-	//box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.25);
-	transition: 0.6s ease transform;
-	
-	&:hover {
-	  transform: scale(1.2);
-	   
-	}
-  
-	&::before {
- 
-	  &:hover {
-		transform: translateZ(0);
-	  }
-	}
-  
-	&::after {
-	 
-	  &:hover {
-		transform: translateZ(-1px);
-	  }
-	}
+  transform: scale(0.95) rotateY(0) rotateX(15deg) translateZ(1.5rem);
+  transform-style: preserve-3d;
+  transition: 0.6s ease transform;
+  &:hover {
+    transform: scale(1.2);
   }
+  &::before {
+    &:hover {
+      transform: translateZ(0);
+    }
+  }
+  &::after {
+    &:hover {
+      transform: translateZ(-1px);
+    }
+  }
+}

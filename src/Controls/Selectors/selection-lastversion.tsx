@@ -1,7 +1,7 @@
 import React from "react";
-import PanelVersionApp from "./panel-version-app";
-import Git from "../Modules/GitHub";
-import { render } from "react-dom";
+import PanelVersionApp from "../panel-version-app";
+import Git from "../../Modules/GitHub";
+import ReactDOM, { render } from "react-dom";
 
 interface SelectionListVerisonsProp {
   Data: String;
@@ -22,13 +22,12 @@ const SelectionListVerisons = ({
     component = (
       <>
         {list_.map((o: any, e: any) => {
-            
           let asset = o["assets"][0];
           let name = asset["name"];
           let tag_name = o["tag_name"];
           let body = o["body"];
           let download_count = asset["download_count"];
-          count_ += download_count
+          count_ += download_count;
           return (
             <PanelVersionApp
               Text={body}
@@ -43,36 +42,15 @@ const SelectionListVerisons = ({
       </>
     );
     render(component, document.getElementById("listversions"));
-    render(<h2 className="fw-bolder text-white-50 py-5">Cкачиваний: {count_}</h2> , document.getElementById("count_download"));
-     
+    // render(
+    //   <h2 className="fw-bolder text-white-50 py-5">Cкачиваний: {count_}</h2>,
+    //   document.getElementById("count_download")
+    // );
   });
+  let TEXT_HIDE: string = "На главную";
 
   return (
     <>
-    <section>
-        <div className="container px-5 py-5">
-          <div className="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
-            <div className="col mb-5 mb-5 mb-xl-0">
-              <div className="text-center">
-                <button
-                  onClick={EvMouseDown}
-                  style={{ padding: "20px 100px 20px 100px" }}
-                  className="btn btn-hover btn-lg px-24 me-sm-1"
-                >
-                  Hide
-                </button>
-                <div id="count_download">
-
-                </div>
-               
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="listversions" className="py-5  ">
-        {component}
-      </section>
       <section>
         <div className="container px-5">
           <div className="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
@@ -80,10 +58,28 @@ const SelectionListVerisons = ({
               <div className="text-center">
                 <button
                   onClick={EvMouseDown}
-                  style={{ padding: "20px 100px 20px 100px" }}
-                  className="btn btn-hover btn-lg px-24 me-sm-1"
+                  className="btn btn-hover me-sm-1 text-select-forg"
                 >
-                  Hide
+                  {TEXT_HIDE}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="listversions" className="py-5  ">
+        {component}
+      </section>{" "}
+      <section>
+        <div className="container px-5">
+          <div className="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
+            <div className="col mb-5 mb-5 mb-xl-0">
+              <div className="text-center">
+                <button
+                  onClick={EvMouseDown}
+                  className="btn btn-hover me-sm-1 text-select-forg"
+                >
+                  {TEXT_HIDE}
                 </button>
               </div>
             </div>

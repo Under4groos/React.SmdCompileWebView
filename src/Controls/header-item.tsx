@@ -23,18 +23,19 @@ const Headeritem = ({ Title, DateText, EvDownload }: HeaderitemProp) => {
                 <h1 className="display-5 fw-bolder text-white mb-2">{Title}</h1>
                 <p className="lead fw-normal text-white-50 mb-4">{DateText}</p>
                 <div className="d-grid gap-2 d-sm-flex justify-content-sm-center justify-content-xl-start mb-2">
-                   {EvDownload != null ?  
-                  <>
-                    <button
-                      onClick={EvDownload}
-                      
-                      className="btn btn-hover btn-lg px-24 me-sm-1"
-                    >
-                      Скачать Demo
-                    </button>
-                  </> : <></>}
+                  {EvDownload != null ? (
+                    <>
+                      <button
+                        onClick={EvDownload}
+                        className="btn btn-hover btn-lg px-24 me-sm-1"
+                      >
+                        Скачать Demo
+                      </button>
+                    </>
+                  ) : (
+                    <></>
+                  )}
 
-                  
                   <ButtonItem
                     Title="Купить  500₽"
                     Url="https://vk.com/underko"
@@ -57,11 +58,11 @@ const Headeritem = ({ Title, DateText, EvDownload }: HeaderitemProp) => {
                 </div>
               </div>
             </div>
-            {/* d-none  */}
+         
             <div className="col-xl-5 col-xxl-6  d-xl-block text-center div-3d">
               <Img3d Url="https://i.imgur.com/7xeBcoE.png"></Img3d>
 
-              {/* <Video3d Url={""}></Video3d> */}
+             
             </div>
           </div>
         </div>
