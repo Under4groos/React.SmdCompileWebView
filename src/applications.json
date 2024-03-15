@@ -13,6 +13,13 @@
       "https://www.youtube.com/watch?v=yUbzzaRqWpo"
     ],
     [
+      "vgui_XAMLReader_console ( ZIP )",
+      "vgui_XAMLReader_console - конвертирует XAML HTML в glua code. Позволяет писать окна, худы и прочее... Программа писалась с дури как демонстарция того что это возможно.",
+      "https://under4groos.github.io/vgui_XAMLReader_console.View/",
+      "https://i.imgur.com/RrHMDw0.png",
+      "#"
+    ],
+    [
       "SyntaxBox ( ZIP )",
       "Архив с конфигурацией для тектового редактора. Подсветка синтаксиса.",
       "https://drive.usercontent.google.com/u/0/uc?id=1nlh74AlAvmikpjJABX7R3tEkGcbEdvXT&export=download",
